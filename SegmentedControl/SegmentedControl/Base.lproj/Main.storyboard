@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegmentedControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmF-Bo-w2g" customClass="SegmentedControlScrollView" customModule="SegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="144" width="393" height="84"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-iK-LFb" customClass="SegmentedControlView" customModule="SegmentedControl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="380" width="393" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hms-rQ-OKu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNe-Hb-3au">
+                                <rect key="frame" x="166.66666666666666" y="274" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="JcY-2P-g5w"/>
+                                    <constraint firstAttribute="height" constant="60" id="whD-3h-CSJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-lF-Ip9">
+                                <rect key="frame" x="166.66666666666666" y="486" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dF3-qY-Wez"/>
+                                    <constraint firstAttribute="width" constant="60" id="gLZ-bc-3S3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b1a-lF-Ip9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3pt-HP-b1t"/>
+                            <constraint firstItem="b1a-lF-Ip9" firstAttribute="top" secondItem="MNR-iK-LFb" secondAttribute="bottom" constant="46" id="7tH-wQ-Bbw"/>
+                            <constraint firstItem="FmF-Bo-w2g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="IZL-nH-fG9"/>
+                            <constraint firstItem="oNe-Hb-3au" firstAttribute="top" secondItem="FmF-Bo-w2g" secondAttribute="bottom" constant="46" id="PHy-Qj-qhB"/>
+                            <constraint firstAttribute="bottom" secondItem="FmF-Bo-w2g" secondAttribute="bottom" constant="624" id="RL2-Qk-vCU"/>
+                            <constraint firstItem="MNR-iK-LFb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XXW-wN-EyD"/>
+                            <constraint firstItem="oNe-Hb-3au" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aGi-SY-2eF"/>
+                            <constraint firstItem="MNR-iK-LFb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fSG-K0-Ezl"/>
+                            <constraint firstItem="MNR-iK-LFb" firstAttribute="top" secondItem="oNe-Hb-3au" secondAttribute="bottom" constant="46" id="tz4-FB-sCs"/>
+                            <constraint firstItem="FmF-Bo-w2g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xuo-XQ-iUZ"/>
+                            <constraint firstItem="FmF-Bo-w2g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xut-sD-5jF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="FmF-Bo-w2g" id="BRH-yI-Z4n"/>
+                        <outlet property="scrollViewLabel" destination="oNe-Hb-3au" id="Q38-OO-pUh"/>
+                        <outlet property="segmentedControl" destination="MNR-iK-LFb" id="gU3-no-fsc"/>
+                        <outlet property="segmentedViewLabel" destination="b1a-lF-Ip9" id="ZA4-j6-eZE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
